@@ -5,7 +5,7 @@ import sys
 class MyWindow(QMainWindow):
    def __init__(self):
       super(MyWindow, self).__init__()
-      self.setGeometry(1000, 520, 400, 400)
+      self.setGeometry(1200, 320, 600, 800)
       self.setWindowTitle("Tech with Rafa")
       self.initUI()
 
@@ -15,19 +15,20 @@ class MyWindow(QMainWindow):
       self.label.move(50, 50)
 
       self.b1 = QtWidgets.QPushButton(self)
-      self.b1.setText("Click me")
+      self.b1.setText("Click me Please")
       self.b1.clicked.connect(self.clicked)
+
+
+   def update(self):
+      self.label.adjustSize()
 
    def clicked(self):
       self.label.setText("You pressed the button")
       self.update()
 
 
-   def update(self):
-      self.label.adjustSize()
-
 def clicked():
-   print("Clicked")
+   print("Clicked yesy esy esy esyeyese")
 
 
 def window():
